@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/contact.css">
+    <link rel="icon" href="assets/home/logo.png" sizes="40x40" type="image/png">
+<link rel="apple-touch-icon" href="/assets/home/logo.png">
+    <title>Contact</title>
+</head>
+<body>
+    <div class="video-bg">
+    <video id="bgVideo" autoplay muted loop playsinline>
+      <source src="/assets/home/hero-section-bg.mp4" type="video/mp4">
+    </video>
+  </div>
+    <header id="mainHeader" class="header">
+    <nav>
+      <div class="website_name">
+        <img src="/assets/home/logo.png" alt="RogueCodes Logo" class="header-logo">
+        <p><strong>Rogue</strong><strong class="codes">Codes</strong></p>
+      </div>
+
+      <div class="links" id="navLinks">
+        <a href="index.html" class="nav-link">
+          <span class="link-text">Home</span>
+          <div class="link-underline"></div>
+        </a>
+        <a href="about.html" class="nav-link">
+          <span class="link-text">About</span>
+          <div class="link-underline"></div>
+        </a>
+        <a href="#services" class="nav-link">
+          <span class="link-text">Services</span>
+          <div class="link-underline"></div>
+        </a>
+        <a href="careers.html" class="nav-link">
+          <span class="link-text">Careers</span>
+          <div class="link-underline"></div>
+        </a>
+        <a href="contact.html" class="nav-link">
+          <span class="link-text">Contact</span>
+          <div class="link-underline"></div>
+        </a>
+      </div>
+      
+      <button class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+<section class="hero-section" >
+  <h1 class="hero-heading">
+    <span class="main-heading-word" data-text="Contact Us">Contact Us</span>
+  </h1>
+</section>
+<section class="get-in-touch">
+  <div class="top">
+    <div class="t-h">Get in Touch</div>
+    <div class="t-d">We’d love to hear about your idea, startup, or project.
+Our team replies within <span style="font-weight: bold;">24 hours</span>.
+    </div>
+  </div>
+  <div class="botton">
+    <div class="left">
+      <div class="contact-d">Contact Details</div>
+      <ul>
+        <li>IIT Patna, Bihar, India</li>
+        <li>contact@rougecodes.com</li>
+        <li>+91-XXXXXXXXXX</li>
+        <li>rougecodes.com</li>
+      </ul>
+    </div>
+    <div class="right"><img src="assets/contact/get-in-touch.jpg" alt=""></div>
+  </div>
+</section>
+
+<section class="contact-form-section" id="contact">
+            
+            <div class="container">
+                <div class="form-wrapper">
+                    <div class="form-intro">
+                        <div class="form-badge">Project Brief</div>
+                        <h2>Share Your Vision</h2>
+                        <p>
+                            We review every submission personally. Please provide enough detail 
+                            for us to understand your needs and prepare a meaningful response.
+                        </p>
+                        
+                        <div class="form-tips">
+                            <h4>Tips for a great brief:</h4>
+                            <ul>
+                                <li>Describe the problem you're solving</li>
+                                <li>Include your timeline and budget range</li>
+                                <li>Mention any technical constraints</li>
+                                <li>Share examples of work you admire</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <form class="project-form" id="projectForm" novalidate>
+                        <div class="form-group">
+                            <label for="name">
+                                Your name
+                                <span class="required">*</span>
+                            </label>
+                            <input type="text" id="name" name="name" required autocomplete="name">
+                            <div class="form-error" id="name-error"></div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">
+                                    Email address
+                                    <span class="required">*</span>
+                                </label>
+                                <input type="email" id="email" name="email" required autocomplete="email">
+                                <div class="form-error" id="email-error"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">
+                                    Phone number
+                                    <span class="optional">(optional)</span>
+                                </label>
+                                <input type="tel" id="phone" name="phone" autocomplete="tel">
+                                <div class="form-error" id="phone-error"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">
+                                Company
+                                <span class="optional">(optional)</span>
+                            </label>
+                            <input type="text" id="company" name="company" autocomplete="organization">
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="project-type">
+                                    Project type
+                                    <span class="required">*</span>
+                                </label>
+                                <select id="project-type" name="project_type" required>
+                                    <option value="" disabled selected>Select one</option>
+                                    <option value="web">Web Application</option>
+                                    <option value="mobile">Mobile App</option>
+                                    <option value="ecommerce">E-commerce</option>
+                                    <option value="saas">SaaS Platform</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <div class="form-error" id="type-error"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="timeline">
+                                    Timeline
+                                    <span class="required">*</span>
+                                </label>
+                                <select id="timeline" name="timeline" required>
+                                    <option value="" disabled selected>When to start?</option>
+                                    <option value="asap">ASAP</option>
+                                    <option value="1-3">1-3 months</option>
+                                    <option value="3-6">3-6 months</option>
+                                    <option value="6+">6+ months</option>
+                                </select>
+                                <div class="form-error" id="timeline-error"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="budget">
+                                Budget range
+                                <span class="required">*</span>
+                            </label>
+                            <div class="budget-options">
+                                <label class="budget-option">
+                                    <input type="radio" name="budget" value="10-50" required>
+                                    <span class="budget-label">
+                                        <span class="budget-amount">$10k - $50k</span>
+                                        <span class="budget-desc">Seed stage / MVP</span>
+                                    </span>
+                                </label>
+                                <label class="budget-option">
+                                    <input type="radio" name="budget" value="50-100">
+                                    <span class="budget-label">
+                                        <span class="budget-amount">$50k - $100k</span>
+                                        <span class="budget-desc">Growth phase</span>
+                                    </span>
+                                </label>
+                                <label class="budget-option">
+                                    <input type="radio" name="budget" value="100-250">
+                                    <span class="budget-label">
+                                        <span class="budget-amount">$100k - $250k</span>
+                                        <span class="budget-desc">Enterprise</span>
+                                    </span>
+                                </label>
+                                <label class="budget-option">
+                                    <input type="radio" name="budget" value="250+">
+                                    <span class="budget-label">
+                                        <span class="budget-amount">$250k+</span>
+                                        <span class="budget-desc">Large scale</span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="form-error" id="budget-error"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">
+                                Project details
+                                <span class="required">*</span>
+                            </label>
+                            <textarea id="message" name="message" rows="6" required 
+                                      placeholder="Describe your project goals, challenges, and what you hope to achieve..."></textarea>
+                            <div class="form-error" id="message-error"></div>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-submit">
+                                <span class="btn-text">Submit Inquiry</span>
+                                <span class="btn-loader" aria-hidden="true"></span>
+                            </button>
+                            <p class="form-note">
+                                <i class="fas fa-lock"></i>
+                                Your information is secure. We never share your details.
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+<section class="location-section">
+            <div class="container">
+                <div class="location-header">
+                    <h2>Our Innovation Hub</h2>
+                    <p>Located at IIT Patna Technology Park</p>
+                </div>
+                
+                <div class="location-wrapper">
+                    <div class="map-container">
+                        <div class="map-iframe-wrapper">
+                            <!-- Actual Google Maps Embed -->
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3601.140247809344!2d85.09645247533814!3d25.543888077548697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed58dce6d5c207%3A0x32594571d98a9c2f!2sIIT%20Patna!5e0!3m2!1sen!2sin!4v1702912345678!5m2!1sen!2sin" 
+                                width="100%" 
+                                height="100%" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade"
+                                title="Rogue Codes Location at IIT Patna">
+                            </iframe>
+                        </div>
+                    </div>
+                    
+                    <div class="location-info">
+                        <div class="info-card">
+                            <h3><i class="fas fa-map-marker-alt"></i> Rogue Codes HQ</h3>
+                            <address>
+                                IIT Patna Technology Park<br>
+                                Bihta, Patna<br>
+                                Bihar 801106, India
+                            </address>
+                            
+                            <div class="info-details">
+                                <p><i class="fas fa-phone"></i> +91 123 456 7890</p>
+                                <p><i class="fas fa-envelope"></i> visit@rougecodes.com</p>
+                                <p><i class="fas fa-clock"></i> Mon-Fri, 9AM-6PM IST</p>
+                            </div>
+                            
+                            <button class="btn btn-outline" onclick="getDirections()">
+                                <i class="fas fa-directions"></i>
+                                Get directions
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<footer>
+    <section class="main-content">
+      <div class="RC-footer">
+        <div class="rc-f-heading">RogueCodes</div>
+        <div class="rc-f-data">Building innovative digital solutions for startups and enterprises. Expert team specializing in web development, mobile apps, IoT systems, and product engineering.</div>
+      </div>
+      <div class="f-middle">
+        <div class="m-links">Quick Links</div>
+        <div class="f-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+          <a href="#careers">Careers</a>
+        </div>
+      </div>
+      <div class="f-end">
+        <div class="f-contact">Contact</div>
+        <div class="address">
+          <div class="l-1">New Delhi, India</div>
+          <div class="l-2">contact@rougecodes.com</div>
+          <div class="l-3">+91 (555) 123-4567</div>
+          <div class="l-4">www.rougecodes.com</div>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <div class="copyright">© 2025 RougeCodes. All rights reserved.</div>
+  </footer>
+<script src="script/contact.js"></script>
+</body>
+</html>
