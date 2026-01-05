@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | The Team & The Vision</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Adding a slight hover effect for the value cards */
+        .value-card:hover .value-number {
+            color: #8BA888;
+            transform: translateX(10px);
+        }
+        .value-number {
+            transition: all 0.4s ease;
+        }
+    </style>
+</head>
+<body>
+    <div id="cursor"></div><div id="cursor-follower"></div><div class="wipe"></div><div class="grid-bg"></div>
+
+    <nav class="fixed top-0 w-full z-50 p-8 flex justify-between items-center bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0 border border-gray-100">
+        <div class="font-syne text-3xl font-black tracking-tighter cursor-pointer" onclick="goTo('index.html')">ROUGE<span class="text-[#8BA888]">CODES</span></div>
+        <div class="hidden md:flex gap-12 uppercase text-[13px] font-black tracking-[0.4em]">
+            <a class="cursor-pointer" onclick="goTo('about.html')">About</a>
+            <a class="cursor-pointer" onclick="goTo('services.html')">Services</a>
+            <a class="cursor-pointer" onclick="goTo('careers.html')">Careers</a>
+            <a class="cursor-pointer" onclick="goTo('contact.html')">Contact</a>
+        </div>
+        <button class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="mobile-menu">
+            <a onclick="goTo('index.html')">Home</a>
+            <a onclick="goTo('about.html')">About</a>
+            <a onclick="goTo('services.html')">Services</a>
+            <a onclick="goTo('careers.html')">Careers</a>
+            <a onclick="goTo('contact.html')">Contact</a>
+        </div>
+    </nav>
+
+    
+
+    <main class="pt-40">
+        <section class="px-8 md:px-20 pb-32 border-b border-white/10">
+            <h1 class="font-syne text-[8vw] uppercase leading-none mask hover:text-[#8BA888] transition-colors duration-200"><span>The Vision.</span></h1>
+            <div class="grid md:grid-cols-2 mt-20 gap-20 reveal">
+                <p class="text-4xl leading-tight">Founded by Bikesh Kumar, RougeCodes is a full-stack digital collective powered by passion and engineering excellence.</p>
+                <div class="space-y-10 text-white/50">
+                    <p>Started at IIT Patna, we grew from a student initiative into a professional agency. We specialize in building scalable web applications and advanced IoT systems for institutions and startups.</p>
+                    <p>Our goal is simple: To become India's most trusted technology partner by delivering products that actually work under pressure.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-40 px-8 md:px-20 border-b border-white/10 reveal">
+            <div class="flex flex-col md:flex-row justify-between items-start gap-10 mb-24">
+                <h2 class="font-syne text-6xl uppercase leading-tight ">Our Core <span class="text-[#8BA888]">Values</span></h2>
+                <p class=" uppercase tracking-widest text-sm pt-4 text-[#8BA888]">/ Defining our DNA</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-x-20 gap-y-16">
+                <div class="group value-card border-t border-black/10 pt-8 p-6 ">
+                    <div class="value-number text-[#8BA888] font-syne text-3xl mb-4 group-hover:text-[#fff]">01</div>
+                    <h3 class="text-2xl font-syne uppercase mb-4">Innovation First</h3>
+                    <p class="text-white/60 leading-relaxed max-w-md ">We love building products that break patterns and solve real problems, ensuring we stay ahead of the digital curve.</p>
+                </div>
+
+                <div class="group value-card border-t border-black/10 pt-8 p-6 ">
+                    <div class="value-number text-[#8BA888] font-syne text-3xl mb-4 group-hover:text-[#fff]">02</div>
+                    <h3 class="text-2xl font-syne uppercase mb-4">Client-Centric Approach</h3>
+                    <p class="text-white/60 leading-relaxed max-w-md">Your goals become our goals. We align our engineering efforts with your business objectives to ensure tangible results.</p>
+                </div>
+
+                <div class="group value-card border-t border-black/10 pt-8 p-6 ">
+                    <div class="value-number text-[#8BA888] font-syne text-3xl mb-4 group-hover:text-[#fff]">03</div>
+                    <h3 class="text-2xl font-syne uppercase mb-4">Transparency & Commitment</h3>
+                    <p class="text-white/60 leading-relaxed max-w-md">Clear communication, clear processes, and reliable delivery. No hidden layers, just pure collaboration.</p>
+                </div>
+
+                <div class="group value-card border-t border-black/10 pt-8 p-6 ">
+                    <div class="value-number text-[#8BA888] font-syne text-3xl mb-4 group-hover:text-[#fff]">04</div>
+                    <h3 class="text-2xl font-syne uppercase mb-4">Continuous Learning</h3>
+                    <p class="text-white/60 leading-relaxed max-w-md">We grow with every project—technically and creatively. Stagnation is our only enemy.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-40 px-8 md:px-20 reveal">
+            <h2 class="font-syne text-3xl uppercase tracking-[0.5em] text-[#8BA888] mb-20 text-center">Leadership Team</h2>
+            <div class="space-y-10">
+                <div class="flex flex-col md:flex-row justify-between items-end border-b border-white/10 pb-10">
+                    <h3 class="text-5xl font-syne uppercase">Bikesh Kumar</h3>
+                    <p class="text-[#8BA888] font-black uppercase text-xs tracking-widest">Founder & Technical Head</p>
+                </div>
+                <div class="flex flex-col md:flex-row justify-between items-end border-b border-white/10 pb-10">
+                    <h3 class="text-5xl font-syne uppercase">Sarthak Arora</h3>
+                    <p class="text-[#8BA888] font-black uppercase text-xs tracking-widest">Co-Founder & Client Success</p>
+                </div>
+                <div class="flex flex-col md:flex-row justify-between items-end border-b border-white/10 pb-10">
+                    <h3 class="text-5xl font-syne uppercase">Summit Bakshi</h3>
+                    <p class="text-[#8BA888] font-black uppercase text-xs tracking-widest">CFO & Advisor</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section class="py-40 px-8 md:px-20 section-border">
+    <div class="grid md:grid-cols-12 gap-0 border border-black/10">
+        
+        <div class="md:col-span-6 relative overflow-hidden bg-gray-100 border-r border-black/10">
+            <div class="sticky top-40 p-12">
+                <span class="text-[13px] font-black tracking-[0.5em] text-[#8BA888] uppercase block mb-6">/ Capabilities</span>
+                <h2 class="font-syne text-5xl uppercase leading-[0.9] mb-12">What Makes <br> <span class="text-[#8BA888]">Us</span>  Different.</h2>
+            </div>
+            <img src="assets/about/hardware.jpeg" 
+                 alt="Hardware Engineering" 
+                 class="absolute bottom-0 left-0 w-full h-1/2 object-cover  opacity-80 hover:opacity-100 transition-opacity duration-700">
+        </div>
+
+        <div class="md:col-span-6 grid grid-cols-1 divide-y divide-black/10">
+            
+            <div class="value-card reveal group">
+                <div class="value-number text-[#8BA888] group-hover:text-[#fff] font-syne text-2xl mb-2">01</div>
+                <h3 class="text-xl font-bold uppercase mb-2">IoT + Software Hybrid</h3>
+                <p class="text-black/60 text-sm">Real expertise in combining ESP32/embedded hardware with modern cloud ecosystems.</p>
+            </div>
+
+            <div class="value-card reveal group">
+                <div class="value-number text-[#8BA888] group-hover:text-[#fff] font-syne text-2xl mb-2">02</div>
+                <h3 class="text-xl font-bold uppercase mb-2">Startup-Friendly Velocity</h3>
+                <p class="text-black/60 text-sm">Engineered for fast MVP cycles and cost-effective pricing models for founders.</p>
+            </div>
+
+            <div class="value-card reveal group">
+                <div class="value-number text-[#8BA888] group-hover:text-[#fff] font-syne text-2xl mb-2">03</div>
+                <h3 class="text-xl font-bold uppercase mb-2">Product + Design Mindset</h3>
+                <p class="text-black/60 text-sm">We don't just code; we bridge the gap between abstract ideas and production-grade reality.</p>
+            </div>
+
+            <div class="value-card reveal group">
+                <div class="value-number text-[#8BA888] group-hover:text-[#fff] font-syne text-2xl mb-2">04</div>
+                <h3 class="text-xl font-bold uppercase mb-2">Modern UI/UX Practices</h3>
+                <p class="text-black/60 text-sm">High-fidelity interfaces and clean user experiences built using industry-standard tools.</p>
+            </div>
+
+            <div class="value-card reveal group">
+                <div class="value-number text-[#8BA888] group-hover:text-[#fff] font-syne text-2xl mb-2">05</div>
+                <h3 class="text-xl font-bold uppercase mb-2">Scalability From Day One</h3>
+                <p class="text-black/60 text-sm">Architectures designed for growth using high-concurrency languages and cloud providers.</p>
+            </div>
+
+            <div class="value-card reveal group">
+                <div class="value-number text-[#8BA888] group-hover:text-[#fff] font-syne text-2xl mb-2">06</div>
+                <h3 class="text-xl font-bold uppercase mb-2">24/7 Reliable Support</h3>
+                <p class="text-black/60 text-sm">Full lifecycle maintenance and dedicated support to ensure your systems never go offline.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer-main px-8 md:px-20">
+    <div class="grid md:grid-cols-12 gap-16">
+        
+        <div class="md:col-span-4">
+            <div class="font-syne text-3xl font-black tracking-tighter mb-8 cursor-pointer" onclick="goTo('index.html')">
+                ROUGE<span class="text-[#8BA888]">CODES</span>
+            </div>
+            <p class="text-sm text-black/50 max-w-xs mb-8">
+                Industrial grade digital engineering. We bridge the gap between abstract ideas and production-ready reality.
+            </p>
+            <div class="flex gap-4">
+    <a href="https://linkedin.com/company/yourprofile" class="social-icon-box" target="_blank">
+        <i data-lucide="linkedin" class="w-4 h-4"></i>
+    </a>
+    <a href="https://github.com/yourprofile" class="social-icon-box" target="_blank">
+        <i data-lucide="github" class="w-4 h-4"></i>
+    </a>
+    <a href="https://twitter.com/yourprofile" class="social-icon-box" target="_blank">
+        <i data-lucide="twitter" class="w-4 h-4"></i>
+    </a>
+</div>
+        </div>
+
+        <div class="md:col-span-2">
+            <h4 class="footer-heading">Navigate</h4>
+            <a onclick="goTo('index.html')" class="footer-link">Home</a>
+            <a onclick="goTo('about.html')" class="footer-link">About</a>
+            <a onclick="goTo('services.html')" class="footer-link">Services</a>
+            <a onclick="goTo('careers.html')" class="footer-link">Careers</a>
+            <a onclick="goTo('contact.html')" class="footer-link">Contact</a>
+        </div>
+
+        <div class="md:col-span-3">
+            <h4 class="footer-heading">Contact</h4>
+            <p class="footer-link cursor-default">hello@rougecodes.com</p>
+            <p class="footer-link cursor-default">+91 98765 43210</p>
+            <p class="footer-link cursor-default">IIT Patna Ecosystem,<br>Bihta, Bihar, India</p>
+        </div>
+
+        <div class="md:col-span-3">
+            <h4 class="footer-heading">Stay Ready</h4>
+            <p class="text-xs text-black/40 uppercase font-black tracking-widest mb-6">Start your next project with us.</p>
+            <button onclick="goTo('contact.html')" class="btn-k72 !py-4 !px-8 !text-[9px]">Free Consultation</button>
+        </div>
+    </div>
+
+    <div class="footer-bottom flex flex-col md:flex-row justify-between items-center gap-6">
+        <p class="text-[10px] font-black tracking-widest uppercase opacity-30">
+            © 2024 ROUGECODES ENGINEERING. ALL RIGHTS RESERVED.
+        </p>
+        <div class="flex gap-8">
+            <a href="#" class="text-[10px] font-black tracking-widest uppercase opacity-30 hover:opacity-100">Privacy Policy</a>
+            <a href="#" class="text-[10px] font-black tracking-widest uppercase opacity-30 hover:opacity-100">Terms of Service</a>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

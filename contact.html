@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Start Your Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div id="cursor"></div><div id="cursor-follower"></div><div class="wipe"></div><div class="grid-bg"></div>
+
+    <nav class="fixed top-0 w-full z-50 p-8 flex justify-between items-center bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0 border border-gray-100">
+        <div class="font-syne text-3xl font-black tracking-tighter cursor-pointer" onclick="goTo('index.html')">ROUGE<span class="text-[#8BA888]">CODES</span></div>
+        <div class="hidden md:flex gap-12 uppercase text-[13px] font-black tracking-[0.4em]">
+            <a class="cursor-pointer" onclick="goTo('about.html')">About</a>
+            <a class="cursor-pointer" onclick="goTo('services.html')">Services</a>
+            <a class="cursor-pointer" onclick="goTo('careers.html')">Careers</a>
+            <a class="cursor-pointer" onclick="goTo('contact.html')">Contact</a>
+        </div>
+        <button class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="mobile-menu">
+            <a onclick="goTo('index.html')">Home</a>
+            <a onclick="goTo('about.html')">About</a>
+            <a onclick="goTo('services.html')">Services</a>
+            <a onclick="goTo('careers.html')">Careers</a>
+            <a onclick="goTo('contact.html')">Contact</a>
+        </div>
+    </nav>
+
+    
+
+    <section class="py-24 md:py-40 px-6 md:px-20 bg-white">
+    <div class="mb-24">
+        <div class="flex items-center gap-4 mb-6">
+            <span class="text-[13px] font-black tracking-[0.5em] text-[#8BA888] uppercase">Protocol // Communications</span>
+            <div class="h-[1px] flex-grow bg-black/10"></div>
+        </div>
+        <h1 class="group text-[8vw] font-syne font-black uppercase leading-[0.85] tracking-tighter">
+            Get in <br> <span class="group-hover:text-[#8BA888] transition-colors duration-200">Touch.</span>
+        </h1>
+        <p class="mt-8 text-lg md:text-xl font-bold uppercase max-w-xl leading-tight opacity-80">
+            We’d love to hear about your idea, startup, or project. Our team replies within <span class="text-[#8BA888]">24 hours</span>.
+        </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 border-t-2 border-l-2 border-black mb-24 overflow-hidden">
+        <div class="p-8 border-r-2 border-b-2 border-black flex flex-col justify-between min-h-[160px]">
+            <span class="text-[13px] font-black tracking-widest text-[#8BA888] uppercase mb-4">Location</span>
+            <p class="font-syne font-black uppercase text-xs sm:text-sm leading-tight break-words">
+                IIT Patna,<br>Bihar, India
+            </p>
+        </div>
+        <div class="p-8 border-r-2 border-b-2 border-black flex flex-col justify-between min-h-[160px]">
+            <span class="text-[13px] font-black tracking-widest text-[#8BA888] uppercase mb-4">Email</span>
+            <a href="mailto:contact@rougecodes.com" class="font-syne font-black uppercase text-xs sm:text-sm hover:text-[#8BA888] transition-colors break-all">
+                contact@rougecodes.com
+            </a>
+        </div>
+        <div class="p-8 border-r-2 border-b-2 border-black flex flex-col justify-between min-h-[160px]">
+            <span class="text-[13px] font-black tracking-widest text-[#8BA888] uppercase mb-4">Secure Line</span>
+            <p class="font-syne font-black uppercase text-xs sm:text-sm break-words">+91-XXXXXXXXXX</p>
+        </div>
+        <div class="p-8 border-r-2 border-b-2 border-black flex flex-col justify-between min-h-[160px]">
+            <span class="text-[13px] font-black tracking-widest text-[#8BA888] uppercase mb-4">Domain</span>
+            <p class="font-syne font-black uppercase text-xs sm:text-sm break-words">rougecodes.com</p>
+        </div>
+    </div>
+
+    <div class="grid md:grid-cols-12 border-2 border-black overflow-hidden">
+        <div class="md:col-span-4 p-10 md:p-14 bg-[#1A1A1A] text-white flex flex-col justify-between border-b-2 md:border-b-0 md:border-r-2 border-black">
+            <div class="group">
+                <h2 class="text-5xl font-syne font-black uppercase leading-none mb-6 group-hover:text-[#8BA888] transition-colors duration-200">Work <br> With Us.</h2>
+                <div class="h-1 w-12 bg-[#8BA888] group-hover:bg-[#fff] mb-8"></div>
+            </div>
+            <p class="text-[10px] font-bold uppercase tracking-widest opacity-60 leading-relaxed">
+                We partner with startups, enterprises, and institutions to build digital products that scale. Submit your technical requirements for an immediate feasibility audit.
+            </p>
+        </div>
+
+        <div class="md:col-span-8 p-10 md:p-16 bg-white">
+            <form class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-10">
+                <div class="border-b-2 border-black/10 focus-within:border-[#8BA888] transition-colors pb-2">
+                    <label class="text-[13px] font-black uppercase tracking-[0.2em] text-black/40 block mb-1">01 / Full Name</label>
+                    <input type="text" placeholder="REQUIRED" class="w-full bg-transparent border-none outline-none font-syne font-black uppercase text-sm md:text-base placeholder:opacity-30 py-2" required>
+                </div>
+                <div class="border-b-2 border-black/10 focus-within:border-[#8BA888] transition-colors pb-2">
+                    <label class="text-[13px] font-black uppercase tracking-[0.2em] text-black/40 block mb-1">02 / Email Address</label>
+                    <input type="email" placeholder="REQUIRED" class="w-full bg-transparent border-none outline-none font-syne font-black uppercase text-sm md:text-base placeholder:opacity-30 py-2" required>
+                </div>
+                <div class="border-b-2 border-black/10 focus-within:border-[#8BA888] transition-colors pb-2">
+                    <label class="text-[13px] font-black uppercase tracking-[0.2em] text-black/40 block mb-1">03 / Phone Number</label>
+                    <input type="tel" placeholder="REQUIRED" class="w-full bg-transparent border-none outline-none font-syne font-black uppercase text-sm md:text-base placeholder:opacity-30 py-2" required>
+                </div>
+                <div class="border-b-2 border-black/10 focus-within:border-[#8BA888] transition-colors pb-2 relative">
+                    <label class="text-[13px] font-black uppercase tracking-[0.2em] text-black/40 block mb-1">04 / Project Type</label>
+                    <select class="w-full bg-transparent border-none outline-none font-syne font-black uppercase text-sm md:text-base py-2 appearance-none cursor-pointer">
+                        <option>WEB DEVELOPMENT</option>
+                        <option>MOBILE APP</option>
+                        <option>IOT / HARDWARE</option>
+                        <option>BRANDING</option>
+                    </select>
+                </div>
+                <div class="sm:col-span-2 border-b-2 border-black/10 focus-within:border-[#8BA888] transition-colors pb-2">
+                    <label class="text-[9px] font-black uppercase tracking-[0.2em] text-black/40 block mb-1">05 / Scope of Work</label>
+                    <textarea rows="3" placeholder="DESCRIBE YOUR PROJECT REQUIREMENTS..." class="w-full bg-transparent border-none outline-none font-syne font-black uppercase text-sm md:text-base placeholder:opacity-30 py-2 resize-none"></textarea>
+                </div>
+
+                <div class="sm:col-span-2 pt-6">
+                    <button type="submit" class="btn-k72 !py-5 !px-12 !text-[11px] !w-full md:!w-fit">
+                        Transmit Data
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+    <footer class="footer-main px-8 md:px-20">
+    <div class="grid md:grid-cols-12 gap-16">
+        
+        <div class="md:col-span-4">
+            <div class="font-syne text-3xl font-black tracking-tighter mb-8 cursor-pointer" onclick="goTo('index.html')">
+                ROUGE<span class="text-[#8BA888]">CODES</span>
+            </div>
+            <p class="text-sm text-black/50 max-w-xs mb-8">
+                Industrial grade digital engineering. We bridge the gap between abstract ideas and production-ready reality.
+            </p>
+            <div class="flex gap-4">
+    <a href="https://linkedin.com/company/yourprofile" class="social-icon-box" target="_blank">
+        <i data-lucide="linkedin" class="w-4 h-4"></i>
+    </a>
+    <a href="https://github.com/yourprofile" class="social-icon-box" target="_blank">
+        <i data-lucide="github" class="w-4 h-4"></i>
+    </a>
+    <a href="https://twitter.com/yourprofile" class="social-icon-box" target="_blank">
+        <i data-lucide="twitter" class="w-4 h-4"></i>
+    </a>
+</div>
+        </div>
+
+        <div class="md:col-span-2">
+            <h4 class="footer-heading">Navigate</h4>
+            <a onclick="goTo('index.html')" class="footer-link">Home</a>
+            <a onclick="goTo('about.html')" class="footer-link">About</a>
+            <a onclick="goTo('services.html')" class="footer-link">Services</a>
+            <a onclick="goTo('careers.html')" class="footer-link">Careers</a>
+            <a onclick="goTo('contact.html')" class="footer-link">Contact</a>
+        </div>
+
+        <div class="md:col-span-3">
+            <h4 class="footer-heading">Contact</h4>
+            <p class="footer-link cursor-default">hello@rougecodes.com</p>
+            <p class="footer-link cursor-default">+91 98765 43210</p>
+            <p class="footer-link cursor-default">IIT Patna Ecosystem,<br>Bihta, Bihar, India</p>
+        </div>
+
+        <div class="md:col-span-3">
+            <h4 class="footer-heading">Stay Ready</h4>
+            <p class="text-xs text-black/40 uppercase font-black tracking-widest mb-6">Start your next project with us.</p>
+            <button onclick="goTo('contact.html')" class="btn-k72 !py-4 !px-8 !text-[9px]">Free Consultation</button>
+        </div>
+    </div>
+
+    <div class="footer-bottom flex flex-col md:flex-row justify-between items-center gap-6">
+        <p class="text-[10px] font-black tracking-widest uppercase opacity-30">
+            © 2024 ROUGECODES ENGINEERING. ALL RIGHTS RESERVED.
+        </p>
+        <div class="flex gap-8">
+            <a href="#" class="text-[10px] font-black tracking-widest uppercase opacity-30 hover:opacity-100">Privacy Policy</a>
+            <a href="#" class="text-[10px] font-black tracking-widest uppercase opacity-30 hover:opacity-100">Terms of Service</a>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

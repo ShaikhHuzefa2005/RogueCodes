@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RougeCodes | Industrial Grade Digital Engineering</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div id="cursor"></div><div id="cursor-follower"></div><div class="wipe"></div><div class="grid-bg"></div>
+
+    <nav class="fixed top-0 w-full z-50 p-8 flex justify-between items-center bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0 border border-gray-100">
+        <div class="font-syne text-3xl font-black tracking-tighter cursor-pointer" onclick="goTo('index.html')">ROUGE<span class="text-[#8BA888]">CODES</span></div>
+        <div class="hidden md:flex gap-12 uppercase text-[13px] font-black tracking-[0.4em]">
+            <a class="cursor-pointer" onclick="goTo('about.html')">About</a>
+            <a class="cursor-pointer" onclick="goTo('services.html')">Services</a>
+            <a class="cursor-pointer" onclick="goTo('careers.html')">Careers</a>
+            <a class="cursor-pointer" onclick="goTo('contact.html')">Contact</a>
+        </div>
+        <button class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="mobile-menu">
+            <a onclick="goTo('index.html')">Home</a>
+            <a onclick="goTo('about.html')">About</a>
+            <a onclick="goTo('services.html')">Services</a>
+            <a onclick="goTo('careers.html')">Careers</a>
+            <a onclick="goTo('contact.html')">Contact</a>
+        </div>
+    </nav>
+
+    
+
+    <main class="pt-10">
+        <section class="min-h-screen flex items-center px-8 md:px-20 section-border ">
+            <div class="w-full">
+                <h1 class="font-syne text-[8vw] leading-[0.8] uppercase tracking-tighter mb-12">
+                    <span class="mask hover:text-[#8BA888] transition-colors duration-200"><span>Build.</span></span>
+                    <span class="mask hover:text-[#8BA888] transition-colors duration-200"><span>Innovate.</span></span>
+                    <span class="mask hover:text-[#8BA888] transition-colors duration-200"><span>Transform.</span></span>
+                </h1>
+                <div class="grid md:grid-cols-12 gap-10 items-end">
+                    <div class="md:col-span-6">
+                        <p class="text-2xl text-white/70 leading-tight reveal">At RougeCodes, we engineer intelligent systems and high-scale digital products. We bridge the gap between abstract ideas and production-grade reality.</p>
+                    </div>
+                    <div class="md:col-span-6 flex md:justify-end gap-6">
+                        <button onclick="goTo('contact.html')" class="btn-k72">Start Project</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-40 px-8 md:px-20 section-border grid md:grid-cols-12 gap-20">
+            <div class="md:col-span-6 reveal">
+                <span class="text-[12px] font-black tracking-[0.5em] text-[#8BA888] uppercase block mb-10">01 / Our Mission</span>
+                <h2 class="font-syne text-5xl uppercase leading-none">Empowering <br> the Next <br> Tech Wave.</h2>
+            </div>
+            <div class="md:col-span-6 space-y-20 reveal">
+                <p class="text-3xl leading-snug">To empower founders with reliable, scalable, and future-ready solutions that simplify operations, increase efficiency, and create lasting value.</p>
+                <div class="grid md:grid-cols-2 gap-10">
+                    <div>
+                        <h4 class="font-black uppercase text-sm mb-4">Scalability First</h4>
+                        <p class="text-white/50">Our architectures are designed for growth. We use industry-standard cloud providers and high-concurrency languages.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-black uppercase text-sm mb-4">Precision Hardware</h4>
+                        <p class="text-white/50">From ESP32 to custom PCB prototypes, we ensure hardware and software talk to each other without friction.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="marquee py-16 bg-white/5">
+            <div class="marquee-inner font-syne text-[5vw] uppercase opacity-80 text-[#8BA888]">
+                Web Development • Mobile Apps • UI/UX Design • IoT Prototyping • Embedded Systems • AI Automation • Branding • MVP Launch • Cloud Systems • Web Development •
+            </div>
+        </div>
+
+        <section class="py-40 px-8 md:px-20 section-border">
+            <h2 class="font-syne text-7xl uppercase mb-32 text-center reveal">Why RougeCodes?</h2>
+            <div class="grid md:grid-cols-3 gap-px bg-white/10 border border-white/10 reveal">
+                <div class="group hover:bg-[#c0cfb2] bg-[#f9f9f9] transition-colors duration-200 p-12">
+                    <h3 class="text-[#8BA888] group-hover:text-[#fff]  font-black text-4xl mb-6">01</h3>
+                    <h4 class="uppercase font-black mb-4">End-to-End Product Dev</h4>
+                    <p class="text-white/50 text-sm">We don't just code; we architect. From initial user research and wireframing to the final deployment and maintenance cycles.</p>
+                </div>
+                <div class="group hover:bg-[#c0cfb2] bg-[#f9f9f9] transition-colors duration-200 p-12">
+                    <h3 class="text-[#8BA888] group-hover:text-[#fff] font-black text-4xl mb-6">02</h3>
+                    <h4 class="uppercase font-black mb-4">Innovative Approach</h4>
+                    <p class="text-white/50 text-sm">Modern tech stacks only. We avoid legacy bloat to ensure your product remains competitive and maintainable for years.</p>
+                </div>
+                <div class="group hover:bg-[#c0cfb2] bg-[#f9f9f9] transition-colors duration-200 p-12">
+                    <h3 class="text-[#8BA888] group-hover:text-[#fff] font-black text-4xl mb-6">03</h3>
+                    <h4 class="uppercase font-black mb-4">IoT Expertise</h4>
+                    <p class="text-white/50 text-sm">Specialized knowledge in ESP32, Raspberry Pi, and Computer Vision. We build the physical future.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-40 px-8 md:px-20 section-border grid md:grid-cols-12">
+            <div class="md:col-span-12 reveal">
+                 <h2 class="font-syne text-3xl uppercase tracking-[0.5em] text-[#8BA888] mb-20 text-center">Industries We Serve</h2>
+                 <div class="grid grid-cols-2 md:grid-cols-4 gap-10">
+                    <div class="text-center font-black uppercase text-2xl opacity-40 hover:opacity-100 transition">Education</div>
+                    <div class="text-center font-black uppercase text-2xl opacity-40 hover:opacity-100 transition">Healthcare</div>
+                    <div class="text-center font-black uppercase text-2xl opacity-40 hover:opacity-100 transition">Agriculture</div>
+                    <div class="text-center font-black uppercase text-2xl opacity-40 hover:opacity-100 transition">E-Commerce</div>
+                    <div class="text-center font-black uppercase text-2xl opacity-40 hover:opacity-100 transition">Manufacturing</div>
+                    <div class="text-center font-black uppercase text-2xl opacity-40 hover:opacity-100 transition">Hospitality</div>
+                    <div class="text-center font-black uppercase text-2xl opacity-40 hover:opacity-100 transition">Startups</div>
+                    <div class="text-center font-black uppercase text-2xl opacity-40 hover:opacity-100 transition">Research</div>
+                 </div>
+            </div>
+        </section>
+
+        <section class="py-40 px-8 md:px-20 section-border">
+            <div class="grid md:grid-cols-2 gap-20">
+                <div class="p-10 border-l-2 border-[#8BA888] reveal">
+                    <p class="text-3xl font-syne uppercase leading-tight">"They transformed our concept into a production-ready IoT solution. Technical expertise is unmatched."</p>
+                    <span class="block mt-8 text-xs font-black tracking-widest text-[#8BA888]">FOUNDER, IIT DELHI</span>
+                </div>
+                <div class="p-10 border-l-2 border-[#8BA888] reveal">
+                    <p class="text-3xl font-syne uppercase leading-tight">"High-fidelity UI/UX and extremely fast development cycles. Exactly what a startup needs."</p>
+                    <span class="block mt-8 text-xs font-black tracking-widest text-[#8BA888]">FOUNDER, EDTECH IIT PATNA</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="f-b py-40  px-8 text-center bg-[#c0cfb2]">
+        <h2 class="font-syne text-[5vw] uppercase leading-none mb-10 reveal text-[#fff]">Let's Build <br> Something Extraordinary.</h2>
+        <button onclick="goTo('contact.html')" class=" reveal btn">Free Consultation</button>
+    </footer>
+<footer class="footer-main px-8 md:px-20">
+    <div class="grid md:grid-cols-12 gap-16">
+        
+        <div class="md:col-span-4">
+            <div class="font-syne text-3xl font-black tracking-tighter mb-8 cursor-pointer" onclick="goTo('index.html')">
+                ROUGE<span class="text-[#8BA888]">CODES</span>
+            </div>
+            <p class="text-sm text-black/50 max-w-xs mb-8">
+                Industrial grade digital engineering. We bridge the gap between abstract ideas and production-ready reality.
+            </p>
+            <div class="flex gap-4">
+    <a href="https://linkedin.com/company/yourprofile" class="social-icon-box" target="_blank">
+        <i data-lucide="linkedin" class="w-4 h-4"></i>
+    </a>
+    <a href="https://github.com/yourprofile" class="social-icon-box" target="_blank">
+        <i data-lucide="github" class="w-4 h-4"></i>
+    </a>
+    <a href="https://twitter.com/yourprofile" class="social-icon-box" target="_blank">
+        <i data-lucide="twitter" class="w-4 h-4"></i>
+    </a>
+</div>
+        </div>
+
+        <div class="md:col-span-2">
+            <h4 class="footer-heading">Navigate</h4>
+            <a onclick="goTo('index.html')" class="footer-link">Home</a>
+            <a onclick="goTo('about.html')" class="footer-link">About</a>
+            <a onclick="goTo('services.html')" class="footer-link">Services</a>
+            <a onclick="goTo('careers.html')" class="footer-link">Careers</a>
+            <a onclick="goTo('contact.html')" class="footer-link">Contact</a>
+        </div>
+
+        <div class="md:col-span-3">
+            <h4 class="footer-heading">Contact</h4>
+            <p class="footer-link cursor-default">hello@rougecodes.com</p>
+            <p class="footer-link cursor-default">+91 98765 43210</p>
+            <p class="footer-link cursor-default">IIT Patna Ecosystem,<br>Bihta, Bihar, India</p>
+        </div>
+
+        <div class="md:col-span-3">
+            <h4 class="footer-heading">Stay Ready</h4>
+            <p class="text-xs text-black/40 uppercase font-black tracking-widest mb-6">Start your next project with us.</p>
+            <button onclick="goTo('contact.html')" class="btn-k72 !py-4 !px-8 !text-[9px]">Free Consultation</button>
+        </div>
+    </div>
+
+    <div class="footer-bottom flex flex-col md:flex-row justify-between items-center gap-6">
+        <p class="text-[10px] font-black tracking-widest uppercase opacity-30">
+            © 2024 ROUGECODES ENGINEERING. ALL RIGHTS RESERVED.
+        </p>
+        <div class="flex gap-8">
+            <a href="#" class="text-[10px] font-black tracking-widest uppercase opacity-30 hover:opacity-100">Privacy Policy</a>
+            <a href="#" class="text-[10px] font-black tracking-widest uppercase opacity-30 hover:opacity-100">Terms of Service</a>
+        </div>
+    </div>
+</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Detailed Capabilities</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div id="cursor"></div><div id="cursor-follower"></div><div class="wipe"></div><div class="grid-bg"></div>
+
+    <nav class="fixed top-0 w-full z-50 p-8 flex justify-between items-center bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0 border border-gray-100">
+        <div class="font-syne text-3xl font-black tracking-tighter cursor-pointer" onclick="goTo('index.html')">ROUGE<span class="text-[#8BA888]">CODES</span></div>
+        <div class="hidden md:flex gap-12 uppercase text-[13px] font-black tracking-[0.4em]">
+            <a class="cursor-pointer" onclick="goTo('about.html')">About</a>
+            <a class="cursor-pointer" onclick="goTo('services.html')">Services</a>
+            <a class="cursor-pointer" onclick="goTo('careers.html')">Careers</a>
+            <a class="cursor-pointer" onclick="goTo('contact.html')">Contact</a>
+        </div>
+        <button class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="mobile-menu">
+            <a onclick="goTo('index.html')">Home</a>
+            <a onclick="goTo('about.html')">About</a>
+            <a onclick="goTo('services.html')">Services</a>
+            <a onclick="goTo('careers.html')">Careers</a>
+            <a onclick="goTo('contact.html')">Contact</a>
+        </div>
+    </nav>
+
+    
+
+    <main class="pt-40 relative ">
+    <section class="px-8 md:px-20 mb-32">
+        <h1 class="font-syne text-[8vw] uppercase leading-none hover:text-[#8BA888] transition-colors duration-200">
+            <span>Solutions.</span>
+        </h1>
+    </section>
+
+    <section class="b grid md:grid-cols-12 section-border reveal sticky top-0 h-screen bg-white">
+        <div class="md:col-span-6 overflow-hidden col-border">
+            <img src="assets/services/web_development.png" 
+                 class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000" alt="Web Engineering">
+        </div>
+        <div class="md:col-span-6 p-12 md:p-24 flex flex-col justify-center bg-white">
+            <span class="text-[#8BA888] font-black tracking-widest text-xm mb-4">01 / SOLUTIONS</span>
+            <h2 class="text-5xl font-syne uppercase mb-8 hover:text-[#8BA888]">Web Development</h2>
+            <ul class="space-y-4 text-lg uppercase font-bold text-black/80">
+                <li>→ Custom Enterprise Web Apps</li>
+                <li>→ Next.js & React Ecosystems</li>
+                <li>→ Admin Dashboards & CRM</li>
+            </ul>
+            <p class="mt-8 text-sm opacity-50 leading-relaxed">Lightning-fast performance and secure, scalable architecture from day one.</p>
+        </div>
+    </section>
+
+    <section class="b grid md:grid-cols-12 section-border reveal sticky top-0 h-screen bg-white">
+        <div class="md:col-span-6 overflow-hidden col-border order-1 md:order-2">
+            <img src="assets/services/app_development.png" 
+                 class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000" alt="App Development">
+        </div>
+        <div class="md:col-span-6 p-12 md:p-24 flex flex-col justify-center order-2 md:order-1 bg-white">
+            <span class="text-[#8BA888] font-black tracking-widest text-xm mb-4">02 / SOLUTIONS</span>
+            <h2 class="text-5xl font-syne uppercase mb-8 hover:text-[#8BA888]">Mobile Apps</h2>
+            <ul class="space-y-4 text-lg uppercase font-bold text-black/80">
+                <li>→ Premium Android & iOS</li>
+                <li>→ Flutter & React Native</li>
+                <li>→ E-commerce & Tracking</li>
+            </ul>
+        </div>
+        
+    </section>
+
+    <section class="b grid md:grid-cols-12 section-border reveal sticky top-0 h-screen bg-white">
+        <div class="md:col-span-6 overflow-hidden col-border">
+            <img src="assets/services/ui_ux_design.png" 
+                 class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000" alt="UIUX Design">
+        </div>
+        <div class="md:col-span-6 p-12 md:p-24 flex flex-col justify-center bg-white">
+            <span class="text-[#8BA888] font-black tracking-widest text-xm mb-4">03 / DESIGN</span>
+            <h2 class="text-5xl font-syne uppercase mb-8 hover:text-[#8BA888]">UI/UX Design</h2>
+            <p class="text-lg font-bold uppercase mb-6">Modern, minimal, and user-first design systems.</p>
+            <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 border border-black/10 text-[10px] font-black">FIGMA</span>
+                <span class="px-3 py-1 border border-black/10 text-[10px] font-black">ADOBE XD</span>
+                <span class="px-3 py-1 border border-black/10 text-[10px] font-black">FRAMER</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="b grid md:grid-cols-12 section-border reveal sticky top-0 h-screen bg-white">
+        
+        <div class="md:col-span-6 overflow-hidden col-border order-1 md:order-2">
+            <img src="assets/services/iot.png" 
+                 class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000" alt="IoT Engineering">
+        </div>
+        <div class="md:col-span-6 p-12 md:p-24 flex flex-col justify-center order-2 md:order-1 bg-white">
+            <span class="text-[#8BA888] font-black tracking-widest text-xm mb-4">04 / HARDWARE</span>
+            <h2 class="text-5xl font-syne uppercase mb-8 hover:text-[#8BA888]">IoT Systems</h2>
+            <p class="text-sm opacity-60 mb-6">Custom device development using ESP32 and Raspberry Pi. We handle the full hardware-software stack.</p>
+            <div class="p-4 border-l-2 border-[#8BA888] bg-[#8BA888]/5">
+                <p class="text-[10px] font-black uppercase tracking-widest">Industry Advantage: Rare Hardware + Software integration.</p>
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="b grid md:grid-cols-12 section-border reveal sticky top-0 h-screen bg-white">
+        <div class="md:col-span-6 overflow-hidden col-border">
+            <img src="assets/services/automation.png" 
+                 class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000" alt="AI Automation">
+        </div>
+        <div class="md:col-span-6 p-12 md:p-24 flex flex-col justify-center bg-white">
+            <span class="text-[#8BA888] font-black tracking-widest text-xm mb-4">05 / AUTOMATION</span>
+            <h2 class="text-5xl font-syne uppercase mb-8 hover:text-[#8BA888]">AI Tools</h2>
+            <ul class="space-y-4 text-lg uppercase font-bold text-black/80">
+                <li>→ Custom AI Chatbots</li>
+                <li>→ Workflow Automation</li>
+                <li>→ Data Reporting Tools</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="b grid md:grid-cols-12 section-border reveal sticky top-0 h-screen bg-white">
+        <div class="md:col-span-6 overflow-hidden col-border order-1 md:order-2">
+            <img src="assets/services/branding.png" 
+                 class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000" alt="Branding Identity">
+        </div>
+        <div class="md:col-span-6 p-12 md:p-24 flex flex-col justify-center order-2 md:order-1 bg-white">
+            <span class="text-[#8BA888] font-black tracking-widest text-xm mb-4">06 / CREATIVE</span>
+            <h2 class="text-5xl font-syne uppercase mb-8 hover:text-[#8BA888]">Branding</h2>
+            <p class="text-sm opacity-60">Identity design, pitch decks, and brand guidelines for high-growth tech startups.</p>
+        </div>
+        
+    </section>
+
+    <section class="b grid md:grid-cols-12 section-border reveal sticky top-0 h-screen bg-white ">
+        <div class="md:col-span-6 overflow-hidden col-border">
+            <img src="assets/services/Startup.png" 
+                 class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000" alt="Startup MVP">
+        </div>
+        <div class="md:col-span-6 p-12 md:p-24 flex flex-col justify-center bg-white">
+            <span class="text-[#8BA888] font-black tracking-widest text-xm mb-4">07 / CONSULTING</span>
+            <h2 class="text-5xl font-syne uppercase mb-8 hover:text-[#8BA888]">Startup MVP</h2>
+            <p class="text-lg font-bold uppercase mb-8 leading-tight">Validate ideas quickly and cost-effectively.</p>
+            <button onclick="goTo('contact.html')" class="btn-k72 !w-fit">Build Your MVP</button>
+        </div>
+    </section>
+    
+</main>
+<footer class="footer-main px-8 md:px-20">
+    <div class="grid md:grid-cols-12 gap-16">
+        
+        <div class="md:col-span-4">
+            <div class="font-syne text-3xl font-black tracking-tighter mb-8 cursor-pointer" onclick="goTo('index.html')">
+                ROUGE<span class="text-[#8BA888]">CODES</span>
+            </div>
+            <p class="text-sm text-black/50 max-w-xs mb-8">
+                Industrial grade digital engineering. We bridge the gap between abstract ideas and production-ready reality.
+            </p>
+            <div class="flex gap-4">
+    <a href="https://linkedin.com/company/yourprofile" class="social-icon-box" target="_blank">
+        <i data-lucide="linkedin" class="w-4 h-4"></i>
+    </a>
+    <a href="https://github.com/yourprofile" class="social-icon-box" target="_blank">
+        <i data-lucide="github" class="w-4 h-4"></i>
+    </a>
+    <a href="https://twitter.com/yourprofile" class="social-icon-box" target="_blank">
+        <i data-lucide="twitter" class="w-4 h-4"></i>
+    </a>
+</div>
+        </div>
+
+        <div class="md:col-span-2">
+            <h4 class="footer-heading">Navigate</h4>
+            <a onclick="goTo('index.html')" class="footer-link">Home</a>
+            <a onclick="goTo('about.html')" class="footer-link">About</a>
+            <a onclick="goTo('services.html')" class="footer-link">Services</a>
+            <a onclick="goTo('careers.html')" class="footer-link">Careers</a>
+            <a onclick="goTo('contact.html')" class="footer-link">Contact</a>
+        </div>
+
+        <div class="md:col-span-3">
+            <h4 class="footer-heading">Contact</h4>
+            <p class="footer-link cursor-default">hello@rougecodes.com</p>
+            <p class="footer-link cursor-default">+91 98765 43210</p>
+            <p class="footer-link cursor-default">IIT Patna Ecosystem,<br>Bihta, Bihar, India</p>
+        </div>
+
+        <div class="md:col-span-3">
+            <h4 class="footer-heading">Stay Ready</h4>
+            <p class="text-xs text-black/40 uppercase font-black tracking-widest mb-6">Start your next project with us.</p>
+            <button onclick="goTo('contact.html')" class="btn-k72 !py-4 !px-8 !text-[9px]">Free Consultation</button>
+        </div>
+    </div>
+
+    <div class="footer-bottom flex flex-col md:flex-row justify-between items-center gap-6">
+        <p class="text-[10px] font-black tracking-widest uppercase opacity-30">
+            © 2024 ROUGECODES ENGINEERING. ALL RIGHTS RESERVED.
+        </p>
+        <div class="flex gap-8">
+            <a href="#" class="text-[10px] font-black tracking-widest uppercase opacity-30 hover:opacity-100">Privacy Policy</a>
+            <a href="#" class="text-[10px] font-black tracking-widest uppercase opacity-30 hover:opacity-100">Terms of Service</a>
+        </div>
+    </div>
+</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
